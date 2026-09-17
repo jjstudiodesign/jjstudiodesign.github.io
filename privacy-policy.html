@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Polityka Prywatności — DueDo / JJStudio</title>
+  <style>
+    :root {
+      --bg: #FEFCF9;
+      --surface: #FFFFFF;
+      --text: #1F2937;
+      --text-muted: #6B7280;
+      --primary: #9F5808;
+      --primary-light: #FDF3E7;
+      --border: #E5E7EB;
+      --accent: #D56A82;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #181512;
+        --surface: #221C16;
+        --text: #F3F4F6;
+        --text-muted: #9CA3AF;
+        --primary: #D97706;
+        --primary-light: #332519;
+        --border: #374151;
+      }
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      padding: 32px 16px;
+    }
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 36px 32px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 24px;
+      margin-bottom: 28px;
+    }
+    .logo {
+      width: 52px;
+      height: 52px;
+      border-radius: 12px;
+      background: var(--primary-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 26px;
+      color: var(--primary);
+    }
+    h1 { font-size: 26px; font-weight: 700; color: var(--primary); margin-bottom: 4px; }
+    .subtitle { font-size: 14px; color: var(--text-muted); }
+    .lang-switch {
+      margin-left: auto;
+      display: flex;
+      gap: 8px;
+    }
+    .lang-btn {
+      background: var(--primary-light);
+      color: var(--primary);
+      border: 1px solid var(--border);
+      padding: 6px 14px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .lang-btn.active {
+      background: var(--primary);
+      color: #FFFFFF;
+      border-color: var(--primary);
+    }
+    h2 { font-size: 18px; font-weight: 600; margin: 24px 0 10px 0; color: var(--text); }
+    p, ul { margin-bottom: 14px; font-size: 15px; }
+    ul { padding-left: 22px; }
+    li { margin-bottom: 6px; }
+    .highlight-card {
+      background: var(--primary-light);
+      border-left: 4px solid var(--primary);
+      padding: 14px 18px;
+      border-radius: 8px;
+      margin: 18px 0;
+      font-size: 14px;
+    }
+    .footer {
+      border-top: 1px solid var(--border);
+      margin-top: 36px;
+      padding-top: 20px;
+      font-size: 13px;
+      color: var(--text-muted);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    a { color: var(--primary); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .lang-section { display: none; }
+    .lang-section.visible { display: block; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo">📅</div>
+      <div>
+        <h1>DueDo</h1>
+        <div class="subtitle">JJStudio &bull; Polityka Prywatności / Privacy Policy</div>
+      </div>
+      <div class="lang-switch">
+        <button class="lang-btn active" onclick="setLang('pl')">PL</button>
+        <button class="lang-btn" onclick="setLang('en')">EN</button>
+      </div>
+    </div>
+
+    <!-- POLISH CONTENT -->
+    <div id="section-pl" class="lang-section visible">
+      <div class="highlight-card">
+        <strong>Prywatność od podstaw (Offline-First):</strong> Aplikacja <strong>DueDo</strong> nie gromadzi, nie śledzi ani nie przesyła Twoich danych osobowych na żadne zewnętrzne serwery. Wszystkie dane pozostają wyłącznie na Twoim urządzeniu.
+      </div>
+
+      <h2>1. Administrator i kontakt</h2>
+      <p>Aplikacja <strong>DueDo</strong> (wcześniej Consumables Tracker) jest rozwijana przez <strong>JJStudio</strong>. Wszelkie pytania dotyczące aplikacji i prywatności można kierować na dedykowany adres e-mail: <a href="mailto:jjstudio.ask@gmail.com">jjstudio.ask@gmail.com</a>.</p>
+
+      <h2>2. Zbieranie i przetwarzanie danych (Zero Data Collection)</h2>
+      <p>Aplikacja działa w modelu <strong>offline-first</strong>. Oznacza to, że:</p>
+      <ul>
+        <li>Nie wymaga zakładania konta, rejestracji ani logowania.</li>
+        <li>Nie zbiera ani nie przetwarza danych telemetrycznych, analitycznych ani identyfikatorów reklamowych (brak SDK analitycznych, brak Google Analytics, brak Firebase, brak reklam).</li>
+        <li>Wszystkie wprowadzone informacje (nazwy przedmiotów, daty wymian, interwały, notatki) są zapisywane wyłącznie w lokalnej bazie danych SQLite na Twoim urządzeniu.</li>
+      </ul>
+
+      <h2>3. Uprawnienia systemowe</h2>
+      <p>Aplikacja prosi wyłącznie o uprawnienia niezbędne do jej podstawowego działania:</p>
+      <ul>
+        <li><strong>Powiadomienia (POST_NOTIFICATIONS):</strong> Wykorzystywane wyłącznie do wyświetlania zaplanowanych przez Ciebie lokalnych przypomnień o nadchodzących lub zaległych wymianach filtrów i materiałów eksploatacyjnych. Powiadomienia są generowane lokalnie przez system Android.</li>
+        <li><strong>Uruchamianie po restarcie (RECEIVE_BOOT_COMPLETED):</strong> Ponieważ system Android usuwa zaplanowane alarmy podczas wyłączenia telefonu, to uprawnienie pozwala aplikacji na ponowne zarejestrowanie Twoich lokalnych przypomnień w systemowym menedżerze alarmów po włączeniu telefonu.</li>
+      </ul>
+
+      <h2>4. Płatności i zakupy w aplikacji (Pro Unlock)</h2>
+      <p>Wersja Pro jest jednorazowym zakupem odblokowującym pełną funkcjonalność. Wszystkie transakcje są obsługiwane w 100% przez <strong>Google Play Billing</strong> firmy Google LLC. JJStudio nie ma dostępu do Twoich danych karty płatniczej, numerów kont ani żadnych danych rozliczeniowych.</p>
+
+      <h2>5. Kopie zapasowe (Kopia w chmurze i pliki JSON)</h2>
+      <ul>
+        <li><strong>Eksport/Import JSON:</strong> Funkcja tworzenia kopii zapasowej pozwala zapisać plik z danymi w pamięci telefonu lub udostępnić go wybranym przez Ciebie aplikacjom (np. e-mail, Twój prywatny Dysk Google). JJStudio nie ma wglądu w zawartość tych plików.</li>
+        <li><strong>Automatyczna kopia Android (Auto Backup):</strong> Jeśli masz włączoną w ustawieniach telefonu systemową kopię zapasową Google, baza danych aplikacji może być szyfrowana i przechowywana na Twoim prywatnym koncie Google Drive zgodnie z polityką firmy Google.</li>
+      </ul>
+
+      <h2>6. Prawa użytkownika i usuwanie danych</h2>
+      <p>Ponieważ wszystkie dane są przechowywane lokalnie na Twoim urządzeniu, masz nad nimi pełną kontrolę w każdej chwili:</p>
+      <ul>
+        <li>Możesz edytować lub usuwać pojedyncze elementy w dowolnym momencie.</li>
+        <li>Odinstalowanie aplikacji lub wybranie opcji „Wyczyść dane” w ustawieniach systemu Android powoduje bezpowrotne usunięcie wszystkich Twoich danych z urządzenia.</li>
+      </ul>
+
+      <h2>7. Zmiany w polityce prywatności</h2>
+      <p>W przypadku wprowadzenia zmian w polityce prywatności, zaktualizowany dokument zostanie opublikowany pod tym samym adresem. Niniejsza wersja obowiązuje od 17 września 2026 r.</p>
+    </div>
+
+    <!-- ENGLISH CONTENT -->
+    <div id="section-en" class="lang-section">
+      <div class="highlight-card">
+        <strong>Privacy by Design (Offline-First):</strong> The <strong>DueDo</strong> app does not collect, track, or transmit your personal data to any external servers. All data stays strictly on your device.
+      </div>
+
+      <h2>1. Controller & Contact</h2>
+      <p>The <strong>DueDo</strong> app is developed by <strong>JJStudio</strong>. For any inquiries regarding privacy or the app, contact us at: <a href="mailto:jjstudio.ask@gmail.com">jjstudio.ask@gmail.com</a>.</p>
+
+      <h2>2. Zero Data Collection</h2>
+      <p>DueDo is an <strong>offline-first</strong> application:</p>
+      <ul>
+        <li>No account creation, registration, or login is required.</li>
+        <li>No telemetry, tracking, analytics, or advertising SDKs are included (no Google Analytics, no Firebase, no ads).</li>
+        <li>All information entered into the app (item names, replacement dates, intervals, notes) is stored solely in a local SQLite database on your device.</li>
+      </ul>
+
+      <h2>3. Device Permissions</h2>
+      <p>DueDo requests only the minimal permissions necessary for its core utility:</p>
+      <ul>
+        <li><strong>Notifications (POST_NOTIFICATIONS):</strong> Used solely to deliver local alerts scheduled by you for upcoming or overdue consumable replacements. Notifications are generated locally by Android AlarmManager.</li>
+        <li><strong>Boot Completion (RECEIVE_BOOT_COMPLETED):</strong> Android cancels pending alarms on device reboot. This permission allows the app to restore your local alarms upon system startup.</li>
+      </ul>
+
+      <h2>4. In-App Purchases (Pro Unlock)</h2>
+      <p>The optional Pro Unlock is a one-time in-app purchase. All transactions are securely processed directly by Google LLC via <strong>Google Play Billing</strong>. JJStudio never receives or stores your payment details, card numbers, or billing addresses.</p>
+
+      <h2>5. Data Backups</h2>
+      <ul>
+        <li><strong>JSON Export/Import:</strong> The backup feature generates a local JSON file stored on your device or shared via destinations you explicitly select (e.g., your own Google Drive or email).</li>
+        <li><strong>Android Auto Backup:</strong> If enabled in your device's Android settings, app database backups may be encrypted and stored in your private Google Drive account according to Google's Privacy Policy.</li>
+      </ul>
+
+      <h2>6. Data Retention & Deletion</h2>
+      <p>Because all data resides exclusively on your device, you have absolute control:</p>
+      <ul>
+        <li>You can modify or delete any item or log entry at any time.</li>
+        <li>Uninstalling the app or clearing its storage via Android Settings immediately and permanently deletes all stored data.</li>
+      </ul>
+
+      <h2>7. Updates</h2>
+      <p>Any future updates to this policy will be posted on this page. Effective date: September 17, 2026.</p>
+    </div>
+
+    <div class="footer">
+      <span>&copy; 2026 JJStudio. All rights reserved.</span>
+      <span>Kontakt: <a href="mailto:jjstudio.ask@gmail.com">jjstudio.ask@gmail.com</a></span>
+    </div>
+  </div>
+
+  <script>
+    function setLang(lang) {
+      document.getElementById('section-pl').className = 'lang-section ' + (lang === 'pl' ? 'visible' : '');
+      document.getElementById('section-en').className = 'lang-section ' + (lang === 'en' ? 'visible' : '');
+      const buttons = document.querySelectorAll('.lang-btn');
+      buttons[0].className = 'lang-btn ' + (lang === 'pl' ? 'active' : '');
+      buttons[1].className = 'lang-btn ' + (lang === 'en' ? 'active' : '');
+    }
+  </script>
+</body>
+</html>
